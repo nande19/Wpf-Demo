@@ -1,0 +1,25 @@
+﻿<Window x:Class="Wpf_Nande.Datacapture"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Wpf_Nande"
+        mc:Ignorable="d"
+        Title="Window1" Height="450" Width="800">
+    <Grid>
+        <Label Content="Fullname" HorizontalAlignment="Left" Margin="75,54,0,0" VerticalAlignment="Top"/>
+        <Label Content="Username" HorizontalAlignment="Left" Margin="75,95,0,0" VerticalAlignment="Top"/>
+        <Label Content="Address" HorizontalAlignment="Left" Margin="75,141,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.541,-0.9"/>
+        <Label Content="Password" HorizontalAlignment="Left" Margin="75,186,0,0" VerticalAlignment="Top"/>
+        <Label Content="Confirm Password" HorizontalAlignment="Left" Margin="75,230,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="fullname" HorizontalAlignment="Left" Margin="177,58,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="username" HorizontalAlignment="Left" Margin="177,99,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="address" HorizontalAlignment="Left" Margin="177,141,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <Button Content="Cancel" HorizontalAlignment="Left" Margin="285,317,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="submit" Content="Submit" HorizontalAlignment="Left" Margin="177,317,0,0" VerticalAlignment="Top" RenderTransformOrigin="-8.5,0.754" Click="submit_Click"/>
+        <Button Content="Reset" HorizontalAlignment="Left" Margin="409,317,0,0" VerticalAlignment="Top"/>
+        <PasswordBox x:Name="password1" HorizontalAlignment="Left" Margin="177,194,0,0" VerticalAlignment="Top" Width="120"/>
+        <PasswordBox x:Name="confirmation1" HorizontalAlignment="Left" Margin="185,234,0,0" VerticalAlignment="Top" Width="120"/>
+
+    </Grid>
+</Window>

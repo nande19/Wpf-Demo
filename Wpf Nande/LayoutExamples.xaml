@@ -1,0 +1,38 @@
+﻿<Window x:Class="Wpf_Nande.LayoutExamples"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Wpf_Nande"
+        mc:Ignorable="d"
+        Title="LayoutExamples" Height="450" Width="800">
+    <DockPanel>
+        <TextBox DockPanel.Dock = "Top">Dock = "Top"</TextBox>
+        <TextBox DockPanel.Dock = "Bottom">Dock = "Bottom"</TextBox>
+        <TextBox DockPanel.Dock = "Left">Dock = "Left"</TextBox>
+        <TextBox DockPanel.Dock = "Right">Dock = "Right"</TextBox>
+        <TextBox Background = "White">This TextBox "fills" the remaining space. </TextBox>
+        <Grid Margin = "10" DockPanel.Dock =" Right">
+                
+                      <Grid.RowDefinitions >
+                    <RowDefinition Height ="*" />
+                <RowDefinition Height ="*" />
+                </Grid.RowDefinitions >
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width ="*"/>
+                        <ColumnDefinition Width ="*"/>
+                    </Grid.ColumnDefinitions>
+<!--Adding name to the first cell of the first row-->
+            <Label>Names</Label>
+                          <!--Adding list box to grid row 1-->
+            <ListBox Grid.Row = "1" x:Name = "lstNames"/>
+                          <!--Adding a pannel in row 1 and grid column 1-->
+            <StackPanel Grid.Row = "1" Grid.Column = "1" Margin=" 5,0,0,0">
+                <!--Adding input text box and a button to row 1 and grid column-->
+                <TextBox x:Name="txtName"/>
+                <Button x:Name="btnAdd" Margin=" 0,5,0,0" Click="ButtonAddName_Click">Add Name</Button>
+            </StackPanel>
+        </Grid>
+            </DockPanel>
+</Window>

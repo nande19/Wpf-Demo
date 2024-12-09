@@ -1,0 +1,19 @@
+﻿<Window x:Class="Wpf_Nande.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Wpf_Nande"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Label Content="Username:" HorizontalAlignment="Left" Margin="66,155,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.643,-1.534"/>
+        <Label Content="Password:" HorizontalAlignment="Left" Margin="68,0,0,0" VerticalAlignment="Center"/>
+        <Button Content="Login" HorizontalAlignment="Left" Margin="157,270,0,0" VerticalAlignment="Top" Width="109" Height="43" Click="Button_Click"/>
+        <Button Content="Cancel" HorizontalAlignment="Left" Margin="324,265,0,0" VerticalAlignment="Top" Height="43" Width="118"/>
+        <TextBox x:Name="user" HorizontalAlignment="Left" Margin="206,159,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <Button Content="Click her to register" HorizontalAlignment="Left" Margin="266,350,0,0" VerticalAlignment="Top" Width="176" Height="36" Click="Button_Click_1"/>
+        <PasswordBox x:Name="pass" HorizontalAlignment="Left" Margin="206,212,0,0" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-0.06,-0.147"/>
+
+    </Grid>
+</Window>
